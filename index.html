@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Седона сайт</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/index-logo.svg" width="368" height="153" alt="Логотип сайта «Седона»">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a><li>
           <li><a href="price.html">Карта штата</a></li>
@@ -19,12 +19,12 @@
       </nav>
     </header>
     
-    <main>
-        <h1>Sedona</h1>
-        <section>
-          <h2>Седона-небольшой городок в аризоне, заслуживающий большего!</h2>
-            <p>Расмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-        </section>
+    <main class="container">
+      <h1>Sedona</h1>
+      <section>
+        <h2>Седона-небольшой городок в аризоне, заслуживающий большего!</h2>
+        <p>Расмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      </section>
       <section>
         <h2>Настоящий городок </h2>
         <p>-№1-<br>
@@ -32,47 +32,48 @@
         </p>
         <img src="img/index-logo.svg" width="368" height="153" alt="Фотография кафе ">
       </section>
-      <div>
+      <section class="features">
         <h2>Приемущества Седоны</h2>
-      <section>
-        <ul>
-            <li>
+        <ul class="features-list">
+            <li class="feature-item">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3>Еда</h3>
               <p>Всегда Заказывайте фирменый бургер, вы не разочаруетесь</p>
             </li>
-            <li>
+            <li class="feature-item">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
             </li>
         </ul>
       </section>
       </div>
-      <section>
+      <section class="news"> 
         <h3>Там есть мост дьявола</h3>
         <p>-№2-<br>
         Да, по нему можно пройти! Если конечно вы осмелитесь
         </p>
-        <img src="img/index-logo.svg" width="368" height="153" alt="Фотография каньона">
+        <figure class="Photo-canyon">
+          <a href="#">
+            <img src="img/studio.jpg" width="286" height="164" alt="Фотография каньона"> 
       </section>
       <section>
-        <ul>
-            <li>
+        <ul class="news-list">
+            <li class="news-item">
               <h3>Небольшая площадь</h3>
               <p>-№3-<br>
                Все достопремечательности находятся очень близко
               </p>
             </li>
-            <li>
+            <li class="news-item">
               <h3>Красивая дорога</h3>
               <p>-№4-<br>
                Ехать в седону из лас-вегаса совсем не скучно!
               </p>
             </li>
-            <li>
+            <li class="news-item">
               <h3>Мало туристов</h3>
               <p>-№5-<br>
               Большинство едет в гранд каньон и толпится там
@@ -80,17 +81,20 @@
             </li>
         </ul>
       </section>
-      <section>
+      <section class="gallery">
         <h3>Заинтересовались?</h3>
         <p>Укажите предлогаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <h3>Поиск гостиницы в седоне</h3>
-        <button type="button">Найти</button>
+        <button class="button tofind-button"type="button">Найти</button>
       </section> 
-    <footer>
-      <section>
+    <footer class="page-footer main-footer">
+      <section class="footer-contacts">
+        <h2>Контакты</h2>
         <p>#Visitsedona<br> 
-        <a href="tel:+74956660166">+7(495)666-01-66</a>
+        <a class="footer-phone" href="tel:+74956660166">+7(495)666-01-66</a>
         </p>
+      </section>
+      <section class="footer-social">
         <ul>
           <li>
             <a href="#">Вконтакте</a>
@@ -103,6 +107,10 @@
           </li>
         </ul>
       </section>
+      <p class="footer-copyright">
+        Разработано:
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
     </footer>
   </body>
 </html>
