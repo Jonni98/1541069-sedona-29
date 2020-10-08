@@ -1,47 +1,227 @@
 :root {
-  --basic-black: #000000;
-  --basic-extra-dark: #242424;
-  --basic-dark: #aba9a7;
-  --basic-neutral: #e5e5e5;
-  --basic-extra-light: #f8f5f2;
-  --basic-white: #ffffff;
-  --basic-dodgerBlue: #1E90FF;
-  --darkOliveGreen: #556B2F;
-
-  --special: #663d15;
-}
-
+    --basic-black: #000000;
+    --basic-extra-dark: #242424;
+    --basic-dark: #aba9a7;
+    --basic-neutral: #e5e5e5;
+    --basic-extra-light: #f8f5f2;
+    --basic-white: #ffffff;
+  
+    --special: #663d15;
+  }
+  
+  /* Global */
+  
 body {
-  min-width: 960px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var( --basic-dodgerBlue);
-  background-image: url("../img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-a {
-    text-decoration: none;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  .main-navigation {
-    font-size: 16px;
-    line-height: 20px;
-    color: var(-basic-black);
-    background-color: transparent;
-  }
-  
-  .main-navigation-wrapper {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
     background-color: var(--basic-white);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
   }
+.site-navigation a{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-decoration: none;
+    color: var(--basic-black);
+    }
+    .main-navigation-wrapper{
+    position: absolute;
+    width: 1200px;
+    height: 56px;   
+    background: #FFFFFF;
+    }
+.sedona-city {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+    text-decoration: none;
+    text-align: center;
+}
+.subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    text-decoration: none;
+    text-align: center;
+}
+.main-text{
+    background-color: var(--basic-white);
+    position: absolute;
+    width: 1200px;
+    height: 216px;
+}/* переделать сделать на кастомный цвет*/
+.features-1 {
+    position: absolute;
+    width: 400px;
+    height: 256px;
+    background: #81B3D2;
+}
+.img-1 {
+    position: absolute;
+    width: 800px;
+    height: 256px;
+    background: url(Image.png);
+}
+.visually-hidden{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-white);
+    background: #81B3D2;
+}
+.features-1text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    background: #81B3D2;
+}
+.Benefits{
+    color: #81B3D2;
+    position: absolute;
+    font-size: 0px;
+    line-height: 0px;
+}
+.Accommodation{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+    height: 50px; /* Высота блока */
+    width: 150px;
+}
+.features-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.housing{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.housing-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.Souvenirs{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.Souvenirs-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.news{
+    position: absolute;
+    width: 400px;
+    height: 256px;
+    left: 840px;
+    top: 1366px;
+
+    background: #81B3D2;
+}
+.bridge{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-white);
+    background: #81B3D2;
+}
+.bridge-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    background: #81B3D2;
+}
+.news-two{
+    position: absolute;
+    width: 1200px;
+    height: 256px;
+    background: #EEEEEE;
+}
+.area{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.area-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.road{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.road-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.tourists{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.tourists-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.interesting{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+}
+.contacts{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+.contacts-teg{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+.footer-contacts{
+    position: absolute;
+    width: 1200px;
+    height: 120px;
+    left: 40px;
+    top: 2642px;
+
+    background: rgba(255, 255, 255, 0.9);
+}
