@@ -52,12 +52,8 @@ body {
 }
 .main-text{
     background-color: var(--basic-white);
-    width: 1200px;
-    height: 216px;
 }/* переделать сделать на кастомный цвет*/
 .features {
-    width: 400px;
-    height: 256px;
     background-color: var(--basic-PaleTurquoise);
 }
 .img-1 {
@@ -121,9 +117,6 @@ body {
     color: var(--basic-black);
 }
 .news{
-    width: 400px;
-    height: 256px;
-    left: 840px;
     top: 1366px;
     background-color: var(--basic-PaleTurquoise);
 }
@@ -142,8 +135,6 @@ body {
     background-color: var(--basic-PaleTurquoise);
 }
 .news-two{
-    width: 1200px;
-    height: 256px;
     background-color: var(--basic-white);
 }
 .area{
@@ -203,9 +194,6 @@ body {
     color: var(--basic-black);
 }
 .footer-contacts{
-    width: 1200px;
-    height: 120px;
-    left: 40px;
     top: 2642px;
     background-color: var(--basic-white);
 }
