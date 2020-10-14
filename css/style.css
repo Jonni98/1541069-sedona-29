@@ -61,8 +61,6 @@ body {
     background-color: var(--basic-PaleTurquoise);
 }
 .img-1 {
-    width: 0px;
-    height: 0px;
     background: url(Image.png);
 }
 .visually-hidden{
