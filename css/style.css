@@ -30,8 +30,7 @@ body {
     line-height: 26px;
     color: var(--basic-black);
 }
-.main-navigation-wrapper{
-    width: 1200px;  
+.main-navigation-wrapper{ 
     color: var(--basic-white);
 }
 .sedona-city {
@@ -83,8 +82,6 @@ body {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
-    height: 50px; /* Высота блока */
-    width: 150px;
 }
 .features-text{
     font-weight: normal;
@@ -117,7 +114,6 @@ body {
     color: var(--basic-black);
 }
 .news{
-    top: 1366px;
     background-color: var(--basic-PaleTurquoise);
 }
 .bridge{
@@ -194,6 +190,5 @@ body {
     color: var(--basic-black);
 }
 .footer-contacts{
-    top: 2642px;
     background-color: var(--basic-white);
 }
