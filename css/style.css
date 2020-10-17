@@ -31,7 +31,7 @@ body {
     color: var(--basic-black);
 }
 .main-navigation-wrapper{ 
-    color: var(--basic-white);
+    background-color: var(--basic-white);
 }
 .sedona-city {
     font-weight: bold;
@@ -190,5 +190,165 @@ body {
     color: var(--basic-black);
 }
 .footer-contacts{
+    background-color: var(--basic-white);
+}
+/*сurent.html*/
+.hotel{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var( --basic-dark);
+}
+.infrastructure-caption{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+.housing-caption{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+.cost-caption{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+.infrastructure-items{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+.housing-type-items{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+.to-find{
+    background-color: var(--basic-white);
+}
+.to-find-caption{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.to-find-item{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+.to-find-item2{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-PaleTurquoise);
+}
+.to-find-item3{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+.to-find-item4{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+.hotels{
+    background-color: var(--basic-white);
+}
+.amara-resort{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.amara-hotel{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.amara-rubles{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.amara-rating{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-dark);
+}
+.desert-resort{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.desert-hotel{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.desert-rubels{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.desert-rating{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-dark);
+}
+.villas-resort{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.villas-appartment{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.villas-rubels{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.villas-rating{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-dark);
+}
+.visitsedona{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.footer-phone{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.page-footer{
     background-color: var(--basic-white);
 }
