@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Hotel search</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/index-logo.svg" width="368" height="153" alt="Логотип сайта «Седона»">
         </a>
         <div class="main-navigation-wrapper">
@@ -15,13 +18,14 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a><li>
           <li><a href="price.html">Карта штата</a></li>
-          <li class="hotel"><a href="catalog.html">Гостиницы</a></li>
+          <li class="hotel"><a>Гостиницы</a></li>
         </ul>
         </div>
       </nav>
     </header>
     
     <main>
+      <div class="form-wrapper">
       <section class="main-list">
         <h2  class="
         infrastructure-caption">
@@ -67,6 +71,7 @@
         </h2>
           <button type="button">Показать</button>
       </section>
+      </div>
       <section class="to-find">
         <h3 class="to-find-caption">
           Найдено:3
@@ -100,8 +105,8 @@
             <p class="amara-hotel">Гостиница </p>
             <p class="amara-rubles">От 4000р</p>
             <p class="amara-rating">Рейтинг:8,5</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <button type="button" class="details-amara">Подробнее</button>
+            <button type="button" class="armor-amara">Забронировать</button>
           </li>
           <li>
             <h3 class="desert-resort">
@@ -110,8 +115,8 @@
             <p  class="desert-hotel">Мотель</p>
             <p  class="desert-rubels">От 3000р</p>
             <p class="desert-rating">Рейтинг:8,9</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <button type="button" class="details-desert">Подробнее</button>
+            <button type="button" class="armor-desert">Забронировать</button>
           </li>
           <li>
             <h3  class="villas-resort">
@@ -120,8 +125,8 @@
             <p class="villas-appartment">Аппартаменты </p>
             <p class="villas-rubels">От 2000р</p>
             <p class="villas-rating">Рейтинг:9,2</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <button type="button" class="details-villas" >Подробнее</button>
+            <button type="button" class="armor-villas">Забронировать</button>
           </li>
         </ul>
       </section>

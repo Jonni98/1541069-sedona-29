@@ -6,7 +6,7 @@
     --basic-extra-light: #f8f5f2;
     --basic-white: #ffffff;
     --basic-PaleTurquoise : #81B3D2;
-    --special: #663d15;
+    --basic-special: #663d15;
 }
   /* Global */
 body {
@@ -25,15 +25,21 @@ body {
     background-repeat: no-repeat;
 }
 .site-navigation a{
+    font-family: "PT Sans Narrow";
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
+    text-decoration: none;
+}
+.site-navigation li{
+    list-style:none;
 }
 .main-navigation-wrapper{ 
     background-color: var(--basic-white);
 }
 .sedona-city {
+    font-family: PT Sans;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -83,6 +89,9 @@ body {
     line-height: 21px;
     color: var(--basic-black);
 }
+.featur-list li{
+    list-style:none;
+}
 .features-text{
     font-weight: normal;
     font-size: 14px;
@@ -116,6 +125,7 @@ body {
 .news{
     background-color: var(--basic-PaleTurquoise);
 }
+
 .bridge{
     font-weight: bold;
     font-size: 21px;
@@ -133,6 +143,9 @@ body {
 .news-two{
     background-color: var(--basic-white);
 }
+.news-list{
+    list-style:none;
+}
 .area{
     font-weight: bold;
     font-size: 21px;
@@ -144,7 +157,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
-}
+}  
 .road{
     font-weight: bold;
     font-size: 21px;
@@ -169,6 +182,9 @@ body {
     line-height: 21px;
     color: var(--basic-black);
 }
+.search-button{
+    background:PaleTurquoise ;
+}
 .interesting{
     font-weight: bold;
     font-size: 30px;
@@ -192,12 +208,18 @@ body {
 .footer-contacts{
     background-color: var(--basic-white);
 }
+.footer-icons{
+    list-style:none;
+}
 /*сurent.html*/
 .hotel{
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var( --basic-dark);
+}
+.form-wrapper{
+    background-color: var(--basic-PaleTurquoise);
 }
 .infrastructure-caption{
     font-weight: bold;
@@ -266,6 +288,7 @@ body {
     background-color: var(--basic-white);
 }
 .amara-resort{
+    font-family: PT Sans;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -276,6 +299,12 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
+}
+.details-amara{
+    background:PaleTurquoise ;
+}
+.armor-amara{
+    background:#663d15;
 }
 .amara-rubles{
     font-weight: normal;
@@ -288,6 +317,12 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-dark);
+}
+.details-desert{
+    background:PaleTurquoise ;
+}
+.armor-desert{
+    background:#663d15;
 }
 .desert-resort{
     font-weight: bold;
@@ -312,6 +347,12 @@ body {
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-dark);
+}
+.details-villas{
+    background:PaleTurquoise ;
+}
+.armor-villas{
+    background:#663d15;
 }
 .villas-resort{
     font-weight: bold;
