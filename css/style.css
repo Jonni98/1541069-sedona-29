@@ -24,6 +24,18 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:var(--basic-black);
+}
+.visually-hidden{
+    font-size: 0px;
+    line-height: 0px;
+    color: var(--basic-white);
+    text-decoration: none;
+}
 .site-navigation a{
     font-family: "PT Sans Narrow";
     font-weight: bold;
@@ -37,6 +49,9 @@ body {
 }
 .main-navigation-wrapper{ 
     background-color: var(--basic-white);
+}
+a{
+    text-decoration: none;
 }
 .sedona-city {
     font-family: PT Sans;
@@ -61,15 +76,17 @@ body {
 .features {
     background-color: var(--basic-PaleTurquoise);
 }
-.img-1 {
-    background: url(Image.png);
-}
-.visually-hidden{
+.features-title{
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
+    color: var(--basic-black);
+}
+.features-title--white {
     color: var(--basic-white);
-    background-color: var(--basic-PaleTurquoise);
+}
+.img-1 {
+    background: url(Image.png);
 }
 .features-1text {
     font-weight: normal;
@@ -123,14 +140,6 @@ body {
     color: var(--basic-black);
 }
 .news{
-    background-color: var(--basic-PaleTurquoise);
-}
-
-.bridge{
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 21px;
-    color: var(--basic-white);
     background-color: var(--basic-PaleTurquoise);
 }
 .number{
@@ -212,6 +221,24 @@ body {
     list-style:none;
 }
 /*сurent.html*/
+.infrastructure-items li{ 
+     list-style-type: none; /* Убираем маркеры */ 
+}
+.type-items li{
+    list-style-type: none; /* Убираем маркеры */ 
+}
+.type-items li{
+    list-style-type: none; /* Убираем маркеры */ 
+}
+.style-find-items li{
+    list-style-type: none; /* Убираем маркеры */ 
+}
+.style-hotels-items{
+    list-style-type: none; /* Убираем маркеры */ 
+}
+.style-contacts-items{
+    list-style-type: none; /* Убираем маркеры */ 
+}
 .hotel{
     font-weight: bold;
     font-size: 21px;
@@ -245,7 +272,7 @@ body {
     line-height: 21px;
     color: var(--basic-white);
 }
-.housing-type-items{
+.style-items{
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
@@ -318,12 +345,6 @@ body {
     line-height: 21px;
     color: var(--basic-dark);
 }
-.details-desert{
-    background:PaleTurquoise ;
-}
-.armor-desert{
-    background:#663d15;
-}
 .desert-resort{
     font-weight: bold;
     font-size: 21px;
@@ -348,11 +369,14 @@ body {
     line-height: 21px;
     color: var(--basic-dark);
 }
-.details-villas{
-    background:PaleTurquoise ;
+.details-button{
+    background: var(--basic-PaleTurquoise);
+    color: var(--basic-white);
 }
-.armor-villas{
-    background:#663d15;
+.armor-button{
+    background: var(--basic-special);
+    color: var(--basic-white);
+}
 }
 .villas-resort{
     font-weight: bold;
