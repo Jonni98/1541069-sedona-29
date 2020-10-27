@@ -138,9 +138,6 @@ a{
     line-height: 21px;
     color: var(--basic-black);
 }
-.news{
-    background-color: var(--basic-PaleTurquoise);
-}
 .number{
     font-weight: normal;
     font-size: 14px;
