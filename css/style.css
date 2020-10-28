@@ -84,8 +84,6 @@ a{
 .features-title--white {
     color: var(--basic-white);
 }
-.img-1 {
-    background: url(Image.png);
 }
 .features-1text {
     font-weight: normal;
@@ -373,7 +371,6 @@ a{
     background: var(--basic-special);
     color: var(--basic-white);
 }
-}
 .villas-resort{
     font-weight: bold;
     font-size: 21px;
@@ -412,4 +409,5 @@ a{
 }
 .page-footer{
     background-color: var(--basic-white);
+    width: 100%;
 }
