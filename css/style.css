@@ -27,30 +27,71 @@ body {
 a{
     text-decoration: none;
 }
-a:visited{
+a:visited {
     color:var(--basic-black);
 }
-.visually-hidden{
+.visually-hidden {
     font-size: 0px;
     line-height: 0px;
     color: var(--basic-white);
     text-decoration: none;
 }
-.site-navigation a{
+.site-navigation a {
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
     text-decoration: none;
 }
-.site-navigation li{
+.site-navigation li {
     list-style:none;
 }
-.main-navigation-wrapper{ 
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    outline-offset: -5px;
+    list-style: none;
+}
+.main-navigation-wrapper { 
     background-color: var(--basic-white);
+}
+.main-navigation {
+    display: grid;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-white);
+    background-color: transparent;
+}
+/* Container */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 a{
     text-decoration: none;
+}
+.page {
+    height: 100%;
+}  
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+.main-header {
+    margin-bottom: 70px;
+    outline-offset: -5px;
+}  
+.main-header-logo {
+    justify-self: center;
+    order: 1;
+    outline-offset: -5px;
+}
+.main-header-bar {
+    background-color: var(--basic-white);
 }
 .sedona-city {
     font-family: PT Sans;
@@ -73,7 +114,9 @@ a{
     background-color: var(--basic-white);
 }/* переделать сделать на кастомный цвет*/
 .features {
+    margin-bottom: 80px;
     background-color: var(--basic-PaleTurquoise);
+    outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 .features-title{
     font-weight: bold;
@@ -84,7 +127,6 @@ a{
 .features-title--white {
     color: var(--basic-white);
 }
-}
 .features-1text {
     font-weight: normal;
     font-size: 14px;
@@ -92,103 +134,132 @@ a{
     color: var(--basic-white);
     background-color: var(--basic-PaleTurquoise);
 }
-.benefits{
+.benefits {
     color: var(--basic-PaleTurquoise);
     font-size: 0px;
     line-height: 0px;
 }
-.accommodation{
+.accommodation {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.featur-list li{
+.featur-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 20px;
+}
+.featur-list li {
     list-style:none;
 }
-.features-text{
+.features-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.housing{
+.housing {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.housing-text{
+.housing-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.souvenirs{
+.souvenirs {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.souvenirs-text{
+.souvenirs-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.number{
+.number {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
     background-color: var(--basic-PaleTurquoise);
 }
-.news-two{
+.news-two {
     background-color: var(--basic-white);
 }
-.news-list{
-    list-style:none;
+.news-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 20px;
 }
-.area{
+.news-item {
+    list-style:none;
+    outline: 5px solid rgba(0, 255, 255 , 0.3);
+    outline-offset: -5px;
+}
+.feature-item p {
+    margin: 0 10px;
+}
+.feature-item {
+    list-style:none;
+    outline: 5px solid rgba(0, 255, 255 , 0.3);
+    outline-offset: -5px;
+}
+.feature-item p {
+    margin: 0 10px;
+}
+.area {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.area-text{
+.area-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }  
-.road{
+.road {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.road-text{
+.road-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.tourists{
+.tourists {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.tourists-text{
+.tourists-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.search-button{
+.search-button {
     background:PaleTurquoise ;
 }
-.interesting{
+.interesting {
     font-weight: bold;
     font-size: 30px;
     line-height: 24px;
@@ -196,218 +267,222 @@ a{
     align-items: center;
     text-align: center;
 }
-.contacts{
+.contacts {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.contacts-teg{
+.contacts-teg {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.footer-contacts{
+.footer-contacts {
     background-color: var(--basic-white);
 }
-.footer-icons{
+.footer-icons {
     list-style:none;
+}
+.main-footer {
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
 }
 /*сurent.html*/
 .infrastructure-items li{ 
      list-style-type: none; /* Убираем маркеры */ 
 }
-.type-items li{
+.type-items li {
     list-style-type: none; /* Убираем маркеры */ 
 }
-.type-items li{
+.type-items li {
     list-style-type: none; /* Убираем маркеры */ 
 }
-.style-find-items li{
+.style-find-items li {
     list-style-type: none; /* Убираем маркеры */ 
 }
-.style-hotels-items{
+.style-hotels-items {
     list-style-type: none; /* Убираем маркеры */ 
 }
-.style-contacts-items{
+.style-contacts-items {
     list-style-type: none; /* Убираем маркеры */ 
 }
-.hotel{
+.hotel {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var( --basic-dark);
 }
-.form-wrapper{
+.form-wrapper {
     background-color: var(--basic-PaleTurquoise);
 }
-.infrastructure-caption{
+.infrastructure-caption {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     color: var(--basic-white);
 }
-.housing-caption{
+.housing-caption {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     color: var(--basic-white);
 }
-.cost-caption{
+.cost-caption {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     color: var(--basic-white);
 }
-.infrastructure-items{
+.infrastructure-items {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
 }
-.style-items{
+.style-items {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
 }
-.to-find{
+.to-find {
     background-color: var(--basic-white);
 }
-.to-find-caption{
+.to-find-caption {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.to-find-item{
+.to-find-item {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
 }
-.to-find-item2{
+.to-find-item2 {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-PaleTurquoise);
 }
-.to-find-item3{
+.to-find-item3 {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
 }
-.to-find-item4{
+.to-find-item4 {
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
 }
-.hotels{
+.hotels {
     background-color: var(--basic-white);
 }
-.amara-resort{
+.amara-resort {
     font-family: PT Sans;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.amara-hotel{
+.amara-hotel {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.details-amara{
+.details-amara {
     background:PaleTurquoise ;
 }
-.armor-amara{
+.armor-amara {
     background:#663d15;
 }
-.amara-rubles{
+.amara-rubles {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.amara-rating{
+.amara-rating {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-dark);
 }
-.desert-resort{
+.desert-resort {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.desert-hotel{
+.desert-hotel {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.desert-rubels{
+.desert-rubels {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.desert-rating{
+.desert-rating {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-dark);
 }
-.details-button{
+.details-button {
     background: var(--basic-PaleTurquoise);
     color: var(--basic-white);
 }
-.armor-button{
+.armor-button {
     background: var(--basic-special);
     color: var(--basic-white);
 }
-.villas-resort{
+.villas-resort {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.villas-appartment{
+.villas-appartment {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.villas-rubels{
+.villas-rubels {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.villas-rating{
+.villas-rating {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-dark);
 }
-.visitsedona{
+.visitsedona {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.footer-phone{
+.footer-phone {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.page-footer{
+.page-footer {
     background-color: var(--basic-white);
     width: 100%;
 }
