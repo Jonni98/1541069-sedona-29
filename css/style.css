@@ -31,11 +31,15 @@ a:visited {
     color:var(--basic-black);
 }
 .visually-hidden {
-    font-size: 0px;
-    line-height: 0px;
-    color: var(--basic-white);
-    text-decoration: none;
-}
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
 .site-navigation a {
     font-weight: bold;
     font-size: 14px;
