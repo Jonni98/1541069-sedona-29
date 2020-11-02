@@ -122,6 +122,7 @@ a{
     background-color: var(--basic-PaleTurquoise);
     outline: 5px solid rgba(255, 0, 0 , 0.3);
     grid-template-columns: 2fr 1fr;
+    display: grid
 }
 .features-title{
     font-weight: bold;
@@ -311,6 +312,11 @@ a{
 .style-contacts-items {
     list-style-type: none; /* Убираем маркеры */ 
 }
+.style-find-items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 .hotel {
     font-weight: bold;
     font-size: 21px;
@@ -358,6 +364,9 @@ a{
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
 }
 .to-find-item {
     font-weight: normal;
@@ -488,4 +497,32 @@ a{
 .page-footer {
     background-color: var(--basic-white);
     width: 100%;
+}
+/* Grid for pages */
+
+.page-catalog {
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    align-content: start;
+}
+.page-catalog .page-title {
+    grid-column: 1 / -1;
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
+  }
+.page-catalog .breadcrumbs {
+    outline: 5px solid rgba(0, 0, 255, 0.7);
+    outline-offset: -5px;
+    margin-bottom: 40px;
+    grid-column: 2 / span 3;
+}
+.motels {
+    outline: 5px solid rgba(255, 0, 255, 0.7);
+    outline-offset: -5px;
+}
+.form-infrastructure{
+    outline: 5px solid rgba(0, 255, 255, 0.7);
+    outline-offset: -5px;
 }
