@@ -59,7 +59,9 @@ a:visited {
     background-color: var(--basic-white);
 }
 .main-navigation {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
     line-height: 20px;
     color: var(--basic-white);
@@ -86,15 +88,22 @@ a{
 }
 .main-header {
     width: 1200px;
-    margin-bottom: 70px;
-    outline-offset: -5px;
+    margin: 0 auto;
 }  
 .main-header-logo {
     justify-self: center;
     order: 1;
 }
+.site-navigation-wrapper{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+}
 .main-header-bar {
+    width: 100%;
     background-color: var(--basic-white);
+    display: flex;
+    justify-content: space-between;
 }
 .sedona-city {
     font-family: PT Sans;
@@ -115,6 +124,7 @@ a{
 }
 .main-text{
     background-color: var(--basic-white);
+    margin-bottom: 80px;
 }/* переделать сделать на кастомный цвет*/
 .features{
     margin-bottom: 80px;
@@ -127,6 +137,8 @@ a{
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    margin: 0;
+    margin-bottom: 25px;
 }
 .features-title--white {
     color: var(--basic-white);
@@ -148,6 +160,12 @@ a{
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    text-align: center;
+}
+.features-bridg{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
 }
 .featur-list {
     display: grid;
@@ -155,21 +173,36 @@ a{
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: space-between;
+}
+.features-text p {
+    margin: 0 10px;
+}
+.housing-text p {
+    margin: 0 10px;
+}
+.souvenirs-textp {
+    margin: 0 10px;
 }
 .featur-list li {
     list-style:none;
+    margin: 0;
+    padding: 0;
 }
 .features-text {
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-black);
+    width: 300px;
+    text-align: center;
 }
 .housing {
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    text-align: center;
 }
 .housing-text {
     font-weight: normal;
@@ -182,6 +215,7 @@ a{
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    text-align: center;
 }
 .souvenirs-text {
     font-weight: normal;
@@ -211,12 +245,9 @@ a{
 }
 .feature-item p {
     margin: 0 10px;
-}
-.feature-item {
+    width: 300px;
     list-style:none;
-}
-.feature-item p {
-    margin: 0 10px;
+    text-align: center;
 }
 .area {
     font-weight: bold;
@@ -518,14 +549,17 @@ a{
 .page-footer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 .footer-wrapper{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
+    
+}
+.main-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
